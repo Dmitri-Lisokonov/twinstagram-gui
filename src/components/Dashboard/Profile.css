@@ -1,0 +1,46 @@
+.dashboard {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px #C9C9C9 solid;
+}
+
+.dashboard_profile-picture-container {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.dashboard_profile-picture-container_image {
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: contain;
+    border-radius: 80px;
+}
+
+.dashboard_controls {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard_controls_username {
+    margin-bottom: 5px;
+}
+
+.dashboard_controls_account-metrics {
+    display: flex;
+    gap: 20px;
+}
+
+.dashboard_controls_change-profile-button {
+    margin-left: 60px;
+    border: 1px #C9C9C9 solid;
+    background-color: #f8f8f8;
+    padding: 4px;
+    border-radius: 3px;
+}
+
+.dashboard_controls_change-profile-button:hover {
+    cursor: pointer;
+}

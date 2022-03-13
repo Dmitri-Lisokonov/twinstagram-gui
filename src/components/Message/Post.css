@@ -34,9 +34,14 @@
 }
 
 .message_description {
-    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 5px;
 }
 
 .message_date {
-    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 5px;
+    font-size: small;
 }
