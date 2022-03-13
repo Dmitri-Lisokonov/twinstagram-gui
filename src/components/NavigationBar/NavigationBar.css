@@ -1,12 +1,27 @@
 .navbar {
     width: 100%;
+    min-height: 60px;
     background-color: #FFFFFF;
     border-bottom: 1px #C9C9C9 solid;
+    position: fixed;
+    top: 0;
+}
+
+.navbar_logo {
+    background-image: url("../../resources/Twinstagram_logo.PNG");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 100%;
+    min-height: 50px;
+    align-self: center;
 }
 
 .navbar-content {
     padding-left: 20%;
     padding-right: 20%;
+    min-height: 60px;
     width: 60%;
     height: 100%;
     display: flex;
@@ -15,4 +30,16 @@
 
 .navbar_controls {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar_controls_profile-picture {
+    background-image: url("../../resources/img_avatar.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 26px;
+    width: 26px;
+    border-radius: 20px;
 }
