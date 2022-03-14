@@ -11,7 +11,6 @@ const NavigationBar = () => {
                 <div className="navbar_logo">
                 </div>
                 <div className="navbar_controls">
-
                     <Link to="/" className="navbar_controls_home-button">
                         <HomeIcon />
                     </Link>
@@ -19,7 +18,6 @@ const NavigationBar = () => {
                         <AddBoxOutlined />
                     </Link>
                     <Link to="/dashboard" className="navbar_controls_profile-picture">
-
                     </Link>
                 </div>
             </div>

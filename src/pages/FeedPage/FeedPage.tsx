@@ -1,5 +1,3 @@
-
-import { Link } from "react-router-dom";
 import Post from "../../components/Message/Post";
 import NavigationBar from "../../components/NavigationBar/NavigationBar";
 import { Message } from "../../models/Message";
