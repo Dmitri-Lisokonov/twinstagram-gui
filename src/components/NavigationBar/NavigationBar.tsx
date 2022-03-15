@@ -8,13 +8,14 @@ const NavigationBar = () => {
     return (
         <div className="navbar">
             <div className="navbar-content">
-                <div className="navbar_logo">
-                </div>
+                <Link to="/" className="navbar_logo">
+
+                </Link>
                 <div className="navbar_controls">
                     <Link to="/" className="navbar_controls_home-button">
                         <HomeIcon />
                     </Link>
-                    <Link to="create" className="navbar_controls_create-post">
+                    <Link to="/create" className="navbar_controls_create-post">
                         <AddBoxOutlined />
                     </Link>
                     <Link to="/dashboard" className="navbar_controls_profile-picture">

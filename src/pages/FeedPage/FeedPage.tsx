@@ -1,4 +1,4 @@
-import Post from "../../components/Message/Post";
+import Post from "../../components/Post/Post";
 import NavigationBar from "../../components/NavigationBar/NavigationBar";
 import { Message } from "../../models/Message";
 import "./FeedPage.css";

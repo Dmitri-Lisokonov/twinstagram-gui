@@ -1,0 +1,47 @@
+.post-preview {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 85px;
+    padding-bottom: 20px;
+}
+
+.post-preview_header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px #C9C9C9 solid; 
+    justify-content: space-between;
+}
+
+.post-preview_header_profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+}
+
+.post-preview_header_controls {
+    display: flex;
+    gap: 5px;
+    padding: 8px;
+}
+
+.post-preview_header_controls_button{
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    color: white;
+}
+
+.post-preview_header_controls_button:hover {
+    cursor: pointer;
+}
+
+.back-button {
+    background-color: #E04343;
+}
+
+.post-button {
+    background-color: #4A7CC8;
+}

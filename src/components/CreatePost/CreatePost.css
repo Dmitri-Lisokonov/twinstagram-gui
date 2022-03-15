@@ -1,0 +1,47 @@
+.post_description_input {
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    border: 1px #c9c9c9 solid;
+    height: 6em;
+    margin-top: 20px;
+    margin-left: 16px;
+    margin-right: 16px;
+    width: 100%;
+    resize: none;
+}
+
+.create-post_description {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.create-post_description_characters-left {
+    display: flex;
+    width: 100%;
+    place-content: end;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 10px;
+    font-size: small;
+    color: #c9c9c9;
+}
+
+.button-width {
+    width: 14em;
+}
+
+.create-post_controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-width {
+    justify-content: center;
+    align-items: center;
+}
+
+.browse-files-button {
+    color: white;
+    
+}
+

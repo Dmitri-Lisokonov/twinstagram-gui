@@ -1,0 +1,15 @@
+.browse-files-button {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.image-upload_controls {
+    display: flex;
+    justify-content: space-between;
+}

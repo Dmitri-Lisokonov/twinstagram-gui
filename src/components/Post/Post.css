@@ -1,11 +1,12 @@
-.message {
+.post {
     background-color: white;
     border: 1px #C9C9C9 solid;
     border-radius: 3px;
     width: 100%;
+    max-height: 70%;
 }
 
-.message_header {
+.post_header {
     border-bottom: 1px #C9C9C9 solid; 
     display: flex;
     align-items: center;
@@ -13,33 +14,32 @@
     padding: 8px;
 }
 
-.message_header_profile-picture {
+.post_header_profile-picture {
     width: 30px;
     height: 30px;
-    background-image: url("../../resources/img_avatar.png");
     border-radius: 20px;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.message_image_container {
+.post_image_container {
     display: flex;
-
 }
 
-.message_container-image_image {
+.post_container-image_image {
     object-fit: cover;
+    max-height: 35em;
     height: 100%;
     width: 100%;
 }
 
-.message_description {
+.post_description {
     padding-left: 16px;
     padding-right: 16px;
     margin-bottom: 5px;
 }
 
-.message_date {
+.post_date {
     padding-left: 16px;
     padding-right: 16px;
     margin-bottom: 5px;

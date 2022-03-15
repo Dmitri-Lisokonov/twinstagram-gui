@@ -1,5 +1,5 @@
-import Profile from "../../components/Dashboard/Profile";
-import Post from "../../components/Message/Post";
+import Profile from "../../components/Profile/Profile";
+import Post from "../../components/Post/Post";
 import NavigationBar from "../../components/NavigationBar/NavigationBar";
 import { Message } from "../../models/Message";
 import "./ProfilePage.css";

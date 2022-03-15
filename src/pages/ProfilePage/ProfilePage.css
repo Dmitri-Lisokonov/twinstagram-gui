@@ -1,9 +1,13 @@
 .dashboardpage {
     height: 100%;
     width: 100%;
+    
 }
 
 .dashboard-content {
     padding-top: 80px;
     padding-bottom: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
 }

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Profile.css"
 
 const Profile = () => {
@@ -9,9 +10,9 @@ const Profile = () => {
             <div className="dashboard_controls">
                 <div className="dashboard_controls_username">
                     some_user
-                    <button className="dashboard_controls_change-profile-button">
-                        change profile
-                    </button>
+                    <Link to="/settings" className="dashboard_controls_change-profile-button">
+                        Change profile
+                    </Link>
                 </div>
                 <div className="dashboard_controls_account-metrics">
                     <div className="dashboard_controls_account-metrics_messages">
@@ -31,7 +32,7 @@ const Profile = () => {
                     Welkom op mijn instagram!
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 

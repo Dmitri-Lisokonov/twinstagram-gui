@@ -1,0 +1,15 @@
+.create-post {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 85px;
+    padding-bottom: 20px;
+}
+
+.create-post_controls {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 5px;
+}
+

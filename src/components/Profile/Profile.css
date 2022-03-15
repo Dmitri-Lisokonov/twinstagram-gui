@@ -5,6 +5,8 @@
     padding: 20px;
     margin-bottom: 20px;
     border-bottom: 1px #C9C9C9 solid;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 .dashboard_profile-picture-container {
@@ -25,22 +27,31 @@
 }
 
 .dashboard_controls_username {
-    margin-bottom: 5px;
+    margin-bottom: 20px;
+    font-size: larger;
 }
 
 .dashboard_controls_account-metrics {
     display: flex;
+    margin-bottom: 20px;
     gap: 20px;
 }
 
 .dashboard_controls_change-profile-button {
-    margin-left: 60px;
+    margin-left: 10%;
     border: 1px #C9C9C9 solid;
     background-color: #f8f8f8;
     padding: 4px;
     border-radius: 3px;
+    color: black;
+    font-size: medium;
+    text-decoration: none;
 }
 
 .dashboard_controls_change-profile-button:hover {
     cursor: pointer;
+}
+
+.dashboard_controls_name {
+    margin-bottom: 20px;
 }
