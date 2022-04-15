@@ -14,13 +14,10 @@ jobs:
     - name: 'Use Node'
       uses: actions/setup-node@v1
       with: 
-        node-version: 14.16.*
+        node-version: 16.14.*
 
-    - name: 'Install'
+    - name: 'Install npm'
       run: npm i
 
-    - name: 'Build'
+    - name: 'Build project'
       run: CI=false npm run-script build
-
-    - name: 'Run'
-      run: npm start
