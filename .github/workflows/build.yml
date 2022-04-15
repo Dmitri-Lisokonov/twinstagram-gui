@@ -8,9 +8,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      with: 16.14.*
-    - name: 'Checkout'
+    - name: 'Use Node'
       uses: actions/setup-node@v1
+      with: 
+        node-version: 14.16.*
     - name: 'Install'
       run: npm i
     - name: 'Build'
