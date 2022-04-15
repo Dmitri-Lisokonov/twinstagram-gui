@@ -1,39 +1,23 @@
-name: Build Twinstagram-gui
+# name: Build Twinstagram-gui
 
-on:
-  push:
-    branches:
-      - main
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - name: 'Checkout'
-      uses: actions/checkout@v2
+# on:
+#   push:
+#     branches:
+#       - development
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: 'Checkout'
+#       uses: actions/checkout@v2
 
-    - name: 'Use Node'
-      uses: actions/setup-node@v1
-      with: 
-        node-version: 16.14.*
+#     - name: 'Use Node'
+#       uses: actions/setup-node@v1
+#       with: 
+#         node-version: 16.14.*
 
-    - name: 'Install npm'
-      run: npm i
+#     - name: 'Install npm'
+#       run: npm i
 
-    - name: 'Build project'
-      run: CI=false npm run-script build
-
-    - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v1
-
-    - name: Login to DockerHub
-      uses: docker/login-action@v1
-      with:
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
-    
-    - name: Build and push
-      uses: docker/build-push-action@v2
-      with:
-        context: MessageService
-        push: true
-        tags: ${{ secrets.DOCKER_USERNAME }}/twinstagram-gui:latest
+#     - name: 'Build project'
+#       run: CI=false npm run-script build
