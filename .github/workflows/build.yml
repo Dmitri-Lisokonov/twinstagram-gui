@@ -1,23 +1,23 @@
-# name: Build Twinstagram-gui
+name: Build Twinstagram-gui
 
-# on:
-#   push:
-#     branches:
-#       - development
-# jobs:
-#   build:
-#     runs-on: ubuntu-latest
-#     steps:
-#     - name: 'Checkout'
-#       uses: actions/checkout@v2
+on:
+  push:
+    branches:
+      - development
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 'Checkout'
+      uses: actions/checkout@v2
 
-#     - name: 'Use Node'
-#       uses: actions/setup-node@v1
-#       with: 
-#         node-version: 16.14.*
+    - name: 'Use Node'
+      uses: actions/setup-node@v1
+      with: 
+        node-version: 16.14.*
 
-#     - name: 'Install npm'
-#       run: npm i
+    - name: 'Install npm'
+      run: npm i
 
-#     - name: 'Build project'
-#       run: CI=false npm run-script build
+    - name: 'Build project'
+      run: CI=false npm run-script build
