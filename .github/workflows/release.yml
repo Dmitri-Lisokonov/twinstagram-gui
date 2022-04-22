@@ -1,4 +1,4 @@
-name: Build Twinstagram-gui
+name: Release Twinstagram-gui
 
 on:
   push:
