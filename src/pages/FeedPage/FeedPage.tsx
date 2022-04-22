@@ -2,17 +2,14 @@ import Post from "../../components/Post/Post";
 import NavigationBar from "../../components/NavigationBar/NavigationBar";
 import { Message } from "../../models/Message";
 import "./FeedPage.css";
+import { Feed } from "../../components/Feed/Feed";
 
-const FeedPage = (props: { messages: Message[] }) => {
+const FeedPage = () => {
 
     return (
         <div className="feed">
             <NavigationBar />
-            {props.messages.map((message) => {
-                return (
-                    <Post message={message} />
-                )
-            })}
+            <Feed />
         </div>
     )
 }
