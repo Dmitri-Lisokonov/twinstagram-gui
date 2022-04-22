@@ -9,15 +9,6 @@ export const MessageProvider = (props: { children: ReactNode }) => {
     const [messages, setMessages] = useState<Message[]>([]);
     const [image, setImage] = useState("");
     const [creatingMessage, setCreatingMessage] = useState({} as Message)
-    const messageService = new MessageService();
-
-    useEffect(() => {
-        messageService.getMessagesForUser(1).then((messages: any) => {
-            if (messages) {
-                setMessages(messages);
-            }
-        });
-    }, []);
 
     const value = {
         image, setImage,

@@ -1,13 +1,12 @@
-import { useContext } from "react";
-import { MessageContext } from "../../contexts/MessageContext";
+import { Message } from "../../models/Message";
 import Post from "../Post/Post";
 
-export const Feed = () => {
-    const { messages } = useContext(MessageContext);
+export const Feed = (props: { messages: Message[] }) => {
+
 
     return (
         <>
-            {messages.map((message) => {
+            {props.messages.map((message) => {
                 return (
                     <Post message={message} />
                 )
