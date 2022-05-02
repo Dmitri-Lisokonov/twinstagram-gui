@@ -22,7 +22,6 @@ const ProfilePage = () => {
         <div className="dashboardpage">
             <NavigationBar />
             <div className="dashboard-content">
-                test
                 <Profile />
                 <Feed messages={messages} />
             </div>
