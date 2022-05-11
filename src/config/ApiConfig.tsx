@@ -1,5 +1,5 @@
 export const ApiConfig = {
-    baseUrl: "http://172.1.16.3/api",
+    baseUrl: "http://172.16.1.3/api",
     headers: {
         "Content-Type": "application/json",
         "Access-Control-Allow-Origin": "*"
