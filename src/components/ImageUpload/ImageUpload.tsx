@@ -9,7 +9,7 @@ const ImageUpload = (props: { buttonText: string }) => {
     const maxNumber = 69;
     const { image, setImage } = useContext(MessageContext);
 
-    const onChange = (
+    const changeImage = (
         imageList: ImageListType,
         addUpdateIndex: number[] | undefined
     ) => {
@@ -22,7 +22,7 @@ const ImageUpload = (props: { buttonText: string }) => {
         <div className="image-upload">
             <ImageUploading
                 value={[]}
-                onChange={onChange}
+                onChange={changeImage}
                 maxNumber={maxNumber}
             >
                 {({

@@ -1,4 +1,3 @@
-import { JsxElement } from "typescript";
 import { Message } from "../../models/Message";
 import "./Post.css";
 
@@ -6,7 +5,7 @@ const Post = (props: { message: Message }) => {
     return (
         <div className="post">
             <div className="post_header">
-                <img className="post_header_profile-picture" src={require("../../resources/img_avatar.png")}></img>
+                <img className="post_header_profile-picture" src={props.message.profilePicture}></img>
                 <div className="post_header_username">
                     {props.message.username}
                 </div>

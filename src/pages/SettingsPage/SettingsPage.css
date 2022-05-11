@@ -16,7 +16,7 @@
 }
 
 .settings_header {
-    border-bottom: 1px #C9C9C9 solid; 
+    border-bottom: 1px #C9C9C9 solid;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -35,9 +35,9 @@
 }
 
 .settings_container-image_image {
-    object-fit: contain;
+    object-fit: cover;
     max-height: 10em;
-    border-radius: 80px !important;
+    border-radius: 150px !important;
 }
 
 .settings_controls {
@@ -81,4 +81,8 @@
 
 .logout {
     background-color: #E04343;
+}
+
+.logout:hover {
+    background-color: #ff4747;
 }

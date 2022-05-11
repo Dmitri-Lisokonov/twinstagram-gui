@@ -6,9 +6,12 @@ export const Feed = (props: { messages: Message[] }) => {
 
     return (
         <>
-            {props.messages.map((message) => {
+            {props.messages.map((message, key) => {
                 return (
-                    <Post message={message} />
+                    <Post
+                        key={key}
+                        message={message}
+                    />
                 )
             })
             }

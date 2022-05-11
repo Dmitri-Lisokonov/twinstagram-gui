@@ -17,3 +17,8 @@ body {
 .remove-underline {
   text-decoration: none;
 }
+
+button:hover {
+  cursor: pointer;
+  background-color: #4995ff;
+}
