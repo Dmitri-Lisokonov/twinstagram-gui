@@ -19,7 +19,7 @@ export const ApiConfig = {
     },
     authService: {
         login: "authentication/login",
-        register: "authentication/register",
+        register: "authentication/Register",
         logOut: "authentication/logout"
     }
 }
