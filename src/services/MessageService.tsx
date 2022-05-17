@@ -39,4 +39,20 @@ export class MessageService {
                 }
             });
     }
+
+    public getFeed() {
+        return this.client.Get(`${config.baseUrl}/${config.messageService.getFeed}`)
+            .then((data) => {
+                if (data) {
+                    let response = data as ResponseMessage;
+                    let messages = this.helper.handleIncomingMessage<Message[]>(response);
+                    if (messages) {
+                        return messages;
+                    }
+                    else {
+                        return false;
+                    }
+                }
+            });
+    }
 }

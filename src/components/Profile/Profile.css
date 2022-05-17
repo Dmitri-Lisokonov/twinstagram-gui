@@ -55,3 +55,21 @@
 .dashboard_controls_name {
     margin-bottom: 20px;
 }
+
+.follow-button {
+    margin-left: 1em;
+    border-radius: 3px;
+    height: 20px;
+    border: none;
+    color: white;
+    background-color: #4A7CC8;
+}
+
+.followers-button {
+    background-color: #f8f8f8;
+    padding: 4px;
+    border-radius: 3px;
+    color: black;
+    font-size: medium;
+    text-decoration: none;
+}

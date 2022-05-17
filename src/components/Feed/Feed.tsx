@@ -1,7 +1,7 @@
 import { Message } from "../../models/Message";
 import Post from "../Post/Post";
 
-export const Feed = (props: { messages: Message[] }) => {
+export const Feed = (props: { messages: Message[], loadUser: boolean }) => {
 
 
     return (
@@ -11,6 +11,7 @@ export const Feed = (props: { messages: Message[] }) => {
                     <Post
                         key={key}
                         message={message}
+                        loadUser={props.loadUser}
                     />
                 )
             })

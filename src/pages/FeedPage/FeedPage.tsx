@@ -19,8 +19,11 @@ const FeedPage = () => {
     }, [currentUser]);
 
     useEffect(() => {
+        if (messages) {
+            setMessages([]);
+        }
         if (currentUserId) {
-            messageService.getMessagesForUser(currentUserId).then((messages: any) => {
+            messageService.getFeed().then((messages: any) => {
                 if (messages) {
                     setMessages(messages);
                 }
@@ -31,7 +34,10 @@ const FeedPage = () => {
     return (
         <div className="feed">
             <NavigationBar />
-            <Feed messages={messages} />
+            <Feed
+                messages={messages}
+                loadUser={true}
+            />
         </div>
     )
 }

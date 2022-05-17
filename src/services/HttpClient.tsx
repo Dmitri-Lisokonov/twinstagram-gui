@@ -5,11 +5,11 @@ export class HttpClient {
     private headers = {
         "Content-Type": "application/json",
         "Access-Control-Allow-Origin": "*",
-        "Authorization": `Bearer ${this.localStorageManager.getAuthToken()}`
+        "Authorization": ""
     }
 
     public async Get(url: string) {
-        console.log(this.headers);
+        this.headers.Authorization = `Bearer ${this.localStorageManager.getAuthToken()}`;
         let response = await fetch(url, {
             method: "GET",
             headers: this.headers
@@ -24,6 +24,7 @@ export class HttpClient {
     }
 
     public async Post(url: string, body: {}) {
+        this.headers.Authorization = `Bearer ${this.localStorageManager.getAuthToken()}`;
         let response = await fetch(url, {
             method: "POST",
             body: JSON.stringify(body),
@@ -39,6 +40,7 @@ export class HttpClient {
     }
 
     public async Delete(url: string) {
+        this.headers.Authorization = `Bearer ${this.localStorageManager.getAuthToken()}`;
         let response = await fetch(url, {
             method: "DELETE",
             headers: this.headers
@@ -53,6 +55,7 @@ export class HttpClient {
     }
 
     public async Put(url: string, body: {}) {
+        this.headers.Authorization = `Bearer ${this.localStorageManager.getAuthToken()}`;
         let response = await fetch(url, {
             method: "PUT",
             body: JSON.stringify(body),

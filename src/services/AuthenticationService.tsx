@@ -16,6 +16,7 @@ export class AuthenticationService {
                 if (data) {
                     let response = data as ResponseMessage;
                     let result = this.helper.handleIncomingMessage<string>(response);
+
                     if (result) {
                         return true;
                     }

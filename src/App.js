@@ -9,6 +9,7 @@ import PreviewPage from "./pages/PreviewPage/PreviewPage";
 import SettingsPage from "./pages/SettingsPage/SettingsPage";
 import { positions, Provider } from "react-alert";
 import AlertTemplate from "react-alert-template-basic";
+import { UserCommunityPage } from "./pages/UserCommunityPage/UserCommunityPage";
 
 function App() {
   const options = {
@@ -28,6 +29,8 @@ function App() {
             <Route path="create" element={<CreatePage />} />
             <Route path="preview" element={<PreviewPage />} />
             <Route path="settings" element={<SettingsPage />} />
+            <Route path="following" element={<UserCommunityPage getFollowing={true} />} />
+            <Route path="followers" element={<UserCommunityPage getFollowing={false} />} />
           </Routes>
         </BrowserRouter>
       </Provider>

@@ -23,7 +23,7 @@ export class LocalStorageManager {
         }
     }
 
-    public setAuthToken(user: User) {
+    public async setAuthToken(user: User) {
         localStorage.setItem("AuthToken", user.token);
     }
 

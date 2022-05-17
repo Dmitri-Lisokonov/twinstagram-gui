@@ -16,32 +16,21 @@ const ProfilePage = () => {
     let { username } = useParams();
     const messageService = new MessageService();
     const userService = new UserService();
-    console.log(messages);
+
     useEffect(() => {
         if (username) {
-            if (currentUser.username === username) {
-                setViewedUser(currentUser);
-                messageService.getMessagesForUser(currentUser.id)
-                    .then((messages) => {
-                        if (messages) {
-                            setMessages(messages);
-                        }
-                    });
-            }
-            else {
-                userService.getUser(username)
-                    .then((user) => {
-                        if (user) {
-                            setViewedUser(user);
-                            messageService.getMessagesForUser(user.id)
-                                .then((messages) => {
-                                    if (messages) {
-                                        setMessages(messages);
-                                    }
-                                });
-                        }
-                    });
-            }
+            userService.getUser(username)
+                .then((user) => {
+                    if (user) {
+                        setViewedUser(user);
+                        messageService.getMessagesForUser(user.id)
+                            .then((messages) => {
+                                if (messages) {
+                                    setMessages(messages);
+                                }
+                            });
+                    }
+                });
         }
     }, [username]);
 
@@ -50,7 +39,10 @@ const ProfilePage = () => {
             <NavigationBar />
             <div className="dashboard-content">
                 <Profile user={viewedUser} />
-                <Feed messages={messages} />
+                <Feed
+                    messages={messages}
+                    loadUser={false}
+                />
             </div>
         </div>
     )

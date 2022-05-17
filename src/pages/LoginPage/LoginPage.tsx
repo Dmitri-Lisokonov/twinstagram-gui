@@ -47,15 +47,17 @@ const LoginPage = () => {
             authService.login(body)
                 .then((authUser) => {
                     if (authUser) {
-                        localStorageManager.setAuthToken(authUser);
-                        userService.getUser(authUser.username)
-                            .then((user) => {
-                                if (user) {
-                                    setCurrentUser(user);
-                                    localStorageManager.setUser(user);
-                                    navigate("/");
-                                }
-                            });
+                        localStorageManager.setAuthToken(authUser)
+                            .then(() => {
+                                userService.getUser(authUser.username)
+                                    .then((user) => {
+                                        if (user) {
+                                            setCurrentUser(user);
+                                            localStorageManager.setUser(user);
+                                            navigate("/");
+                                        }
+                                    });
+                            })
                     }
                 });
         }

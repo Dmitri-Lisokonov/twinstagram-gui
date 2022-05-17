@@ -9,7 +9,7 @@ import { LocalStorageManager } from "../../utility/LocalStorageManager";
 
 const NavigationBar = () => {
     const navigate = useNavigate();
-    const { currentUser } = useContext(UserContext);
+    const { currentUser, defaultIcon } = useContext(UserContext);
     const localStorageManager = new LocalStorageManager();
 
     useEffect(() => {
@@ -34,7 +34,7 @@ const NavigationBar = () => {
                     </Link>
 
                     <Link to={"/profile/" + currentUser.username}>
-                        <img src={currentUser.profilePicture} className="navbar_controls_profile-picture" />
+                        <img src={currentUser.profilePicture ? currentUser.profilePicture : defaultIcon} className="navbar_controls_profile-picture" />
                     </Link>
 
                 </div>
