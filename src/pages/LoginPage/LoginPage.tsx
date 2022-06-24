@@ -73,7 +73,7 @@ const LoginPage = () => {
                         <input onChange={handleChange} name="userNameInput" placeholder="Username" className="auth_form_controls_input username">
 
                         </input>
-                        <input onChange={handleChange} name="passwordInput" placeholder="Password" className="auth_form_controls_input password">
+                        <input onChange={handleChange} type="password" name="passwordInput" placeholder="Password" className="auth_form_controls_input password">
 
                         </input>
                         <button onClick={loginButton} className="auth_form_controls_button">

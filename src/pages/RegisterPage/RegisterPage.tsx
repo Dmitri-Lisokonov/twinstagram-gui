@@ -74,10 +74,10 @@ const RegisterPage = () => {
                         <input onChange={handleChange} placeholder="Full name" name="nameInput" className="auth_form_controls_input name">
 
                         </input>
-                        <input onChange={handleChange} placeholder="Password" name="passwordInput" className="auth_form_controls_input password">
+                        <input onChange={handleChange} type="password" placeholder="Password" name="passwordInput" className="auth_form_controls_input password">
 
                         </input>
-                        <input onChange={handleChange} placeholder="Confirm password" name="confirmPasswordInput" className="auth_form_controls_input password">
+                        <input onChange={handleChange} type="password" placeholder="Confirm password" name="confirmPasswordInput" className="auth_form_controls_input password">
 
                         </input>
                         <input onChange={handleChange} placeholder="Email Address" name="emailInput" className="auth_form_controls_input email">
